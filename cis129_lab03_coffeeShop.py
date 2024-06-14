@@ -66,6 +66,6 @@ print('Total:  $', total, '\
       \n*****************************************')
 
 print('\nK & C greatly appreciates your business.')
-print('\n         Come Back Soon!')
+print('\n        Please Come Back Soon!')
       
       
