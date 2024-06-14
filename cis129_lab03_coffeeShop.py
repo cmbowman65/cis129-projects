@@ -39,7 +39,7 @@ print('***************************************\
 print('Number of muffins bought?\n', muffin)
 print('Number of bagels bought?\n', bagel)
 print('Number of danishes bought?\n', danish, '\
-      \n***************************************')
+      \n\n***************************************')
 
 print('\n\n')
 
@@ -71,10 +71,10 @@ if danish == 1:
 elif danish > 1:
     print(danish, 'Danishes at $2.50 each:  $', danish_tot) #make danishes plural
     
-print('6% tax:  $', tax)
+print('  6% tax:  $', tax)
 print('---------')
 print('Total:  $', total, '\
-      \n***************************************')
+      \n\n***************************************')
 
 print('\nK & C greatly appreciates your business.')
 print('\n          Come Again Soon!')
