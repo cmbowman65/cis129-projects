@@ -39,25 +39,25 @@ print('*****************************************')
 """printing "coffee" or "coffees" on the receipt"""
 if coffee == 1:
     print(coffee, 'Coffee at $5 each:  $', coffee_tot)  
-if coffee > 1:
+elif coffee > 1:
     print(coffee, 'Coffees at $5 each:  $', coffee_tot) #make coffees plural
 
 """printing "muffin" or "muffins" on the receipt"""
 if muffin == 1:
-    print (muffin, 'Muffin at $4 each:  $', muffin_tot)    
-if muffin > 1:
+    print(muffin, 'Muffin at $4 each:  $', muffin_tot)    
+elif muffin > 1:
     print(muffin, 'Muffins at $4 each:  $', muffin_tot) #make muffins plural
 
 """printing "bagel" or "bagels" on the receipt"""
 if bagel == 1:
     print(bagel, 'Bagel at $2 each:  $', bagel_tot)  
-if bagel > 1:
+elif bagel > 1:
     print(bagel, 'Bagels at $2 each:  $', bagel_tot) #make bagels plural
 
 """printing "danish" or "danishes" on the receipt"""
 if danish == 1:
-    print (danish, 'Danish at $2.50 each:  $', danish_tot)    
-if danish > 1:
+    print(danish, 'Danish at $2.50 each:  $', danish_tot)    
+elif danish > 1:
     print(danish, 'Danishes at $2.50 each:  $', danish_tot) #make danishes plural
     
 print('6% tax:  $', tax)
