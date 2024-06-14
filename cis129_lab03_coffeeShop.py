@@ -20,7 +20,7 @@ muffin_tot = muffin * 4.00
 bagel_tot = bagel * 2.00
 danish_tot = danish * 2.50
 
-"""Deteermining the tax"""
+"""Determining the tax"""
 tax = ((coffee_tot + muffin_tot + bagel_tot + danish_tot) * 6) / 100
 
 """The following snipet seems more complicated than it should be.  I had multiple rounding
