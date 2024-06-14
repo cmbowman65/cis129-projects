@@ -34,7 +34,7 @@ total = (((tax + coffee_tot + muffin_tot + bagel_tot + danish_tot)  * 100) // 1)
 print('\n') #blank line between input and results
 
 print('***************************************\
-      \nK & C Coffee and Muffin Shop\
+      \n\nK & C Coffee and Muffin Shop\
       \n\nNumber of coffees bought?\n', coffee)
 print('Number of muffins bought?\n', muffin)
 print('Number of bagels bought?\n', bagel)
@@ -45,7 +45,7 @@ print('\n\n')
 
 """putting together the receipt for printing"""
 print('***************************************\
-      \nK & C Coffee and Muffin Shop Receipt\')
+      \n\nK & C Coffee and Muffin Shop Receipt\n')
 
 """printing "coffee" or "coffees" on the receipt"""
 if coffee == 1:
