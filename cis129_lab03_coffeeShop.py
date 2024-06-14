@@ -44,7 +44,8 @@ print('Number of danishes bought?\n', danish, '\
 print('\n\n')
 
 """putting together the receipt for printing"""
-print('***************************************')
+print('***************************************\
+      \nK & C Coffee and Muffin Shop Receipt\')
 
 """printing "coffee" or "coffees" on the receipt"""
 if coffee == 1:
