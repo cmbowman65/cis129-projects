@@ -8,32 +8,42 @@ Created on Thu Jun 13 15:17:34 2024
 Provide a receipt for items purchased
 """
 
+"""Input values"""
 coffee = int(input('Enter the number of coffees purchased:  '))
 muffin = int(input('Enter the number of muffins purchased:  '))
 bagel = int(input('Enter the number of bagels purchased:  '))
 danish = int(input('Enter the number of danishes purchased:  '))
 
+"""Tallying totals for each item at current prices"""
 coffee_tot = coffee * 5.00
 muffin_tot = muffin * 4.00
 bagel_tot = bagel * 2.00
 danish_tot = danish * 2.50
+
+"""Deteermining the tax"""
 tax = ((coffee_tot + muffin_tot + bagel_tot + danish_tot) * 6) / 100
+
+"""The following snipet seems more complicated than it should be.  I had multiple rounding
+problems in my test runs, e.g. total displaying as $21.1900000000001.  I am sure a more proper way
+exists, but I muliplied the total by 100 to move the decimal to the right two places, floor
+divided by 1 to remove the extra digits, then divided by 100 to move the decimal back to the left."""
+
 total = (((tax + coffee_tot + muffin_tot + bagel_tot + danish_tot)  * 100) // 1) / 100
 
+"""printing the number of items purchased"""
 print('\n') #blank line between input and results
 
 print('****************************************\
       \nK & C Coffee and Muffin Shop\
       \nNumber of coffees bought?\n', coffee)
-
 print('Number of muffins bought?\n', muffin)
 print('Number of bagels bought?\n', bagel)
-
 print('Number of danishes bought?\n', danish, '\
       \n****************************************')
 
 print('\n\n')
 
+"""putting together the receipt for printing"""
 print('*****************************************')
 
 """printing "coffee" or "coffees" on the receipt"""
