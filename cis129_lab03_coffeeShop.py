@@ -26,8 +26,8 @@ print('****************************************\
       \nK & C Coffee and Muffin Shop\
       \nNumber of coffees bought?\n', coffee)
 
-print('Number of muffins bought?\n', muffin
-print('Number of bagels bought?\n', bagel
+print('Number of muffins bought?\n', muffin)
+print('Number of bagels bought?\n', bagel)
 
 print('Number of danishes bought?\n', danish, '\
       \n****************************************')
