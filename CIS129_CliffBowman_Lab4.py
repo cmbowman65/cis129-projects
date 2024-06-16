@@ -1,6 +1,6 @@
 # Module 4 Lab-4
 # Cliff Bowman
-# 15 Jun 2024
+# 16 Jun 2024
 # This program determines the store and individual bonus amounts
 
 # Variables for sales and percentage amounts
