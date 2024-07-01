@@ -16,8 +16,10 @@ def is_palindrome(string):
     for character in string:
         pal_stack.append(character)
         
-    # checks all characters in the stack comparing the pop index (starting from the back of the string) 
-    # with the stack index (starting from the front of the string)
+    # loop to check string characters with their popped counterparts
+    # e.g. first string character with the first popped character, then second string
+    # character with second popped character, etc
+    
     for character in string:
         popped_character = pal_stack.pop()
         
