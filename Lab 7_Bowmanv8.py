@@ -32,6 +32,7 @@ lower_regex = re.compile(r'[a-z]')             # Contains a lower case letter
 number_regex = re.compile(r'[0-9]')            # Contains a number
 special_regex = re.compile(r'[@]|[$]|[_]')     # contains @, $, or _
 name_regex = re.compile(rf"{user_name}", re.I) # contains user name in the password
+common_regex = re.compile(r'dog|cat|rat', re.I)
 
 def main():
 
@@ -40,19 +41,18 @@ def main():
         user_password = input("Input a password:\n")
         print("")
 
-        # Run it through the function and print relevant message to the console
+        # Run it through the function and print relevant messages to the user
         if password_check(user_password) == True:
             print("Good job - strong password!  All requirements met.")
             break
         else:
-            print("\nYour password doesn't meet the minimum requirements. I do not recommend using it.\n")
+            print("\nYour password doesn't meet the minimum requirements.\n")
 
             # Ask user if they desire to process another quote/lyric
             once_more = input("Would you like to try another password? (yes/no)\n")
             if once_more.lower() != "yes":
                 break
 
-# Function to check the above regexes
 def password_check(password):
     # Check if password meets all the requirements
     counter = 0
@@ -71,9 +71,12 @@ def password_check(password):
     if special_regex.search(password) == None:
         print("Your password doesn't have one of the required special characters")
         counter = 1
-    if name_regex.search(password) is not None:
+    if name_regex.search(password) != None:
         print("Your password should NOT contain your name")
         counter = 1
+    if common_regex.search(password) != None:
+        print("Your password contains a common word")
+        counter = 1    
         
     if counter == 1:
         return False
