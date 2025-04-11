@@ -7,7 +7,7 @@ them a reciept with their order and total price for the sandwiches.
 
 Author:  Cliff Bowman
 
-Date:  3 Apr 2025
+Date:  4 Apr 2025
 
 """
 
@@ -90,7 +90,7 @@ def main():
     """ 
     Main function
     
-    Action: Welcomes the user, executes the program's other functions, outputs info
+    Action: Welcomes the user, calls the program's other functions, outputs info
     
     Input:  none
     
@@ -104,15 +104,14 @@ def main():
     
     print("Welcome to the Sandwich Maker program.  Let's make some sandwiches!\n")
     
-    # execute first function
+    # call first function
     bread, protein, cheese, condiments, num_sandwiches = make_sandwich()
     
-    # execute second function
+    # call second function
     total_cost = bill_total(bread, protein, cheese, condiments, num_sandwiches)
     
     # output receipt
-    print('\n' * 2)
-    print(' YOUR ORDER '.center(44, '*'))
+    print(('\n' * 2) + 'YOUR ORDER '.center(44, '*'))
     print('Bread '.ljust(43 - len(bread), '.') + f' {bread}'.rjust(len(bread)))
     print('Protein '.ljust(43 - len(protein), '.') + f' {protein}'.rjust(len(protein)))
     
@@ -138,6 +137,7 @@ def main():
     # Ljust of 42 to account for the dollar sign
     print('Total cost '.ljust(42 - len(str(total_cost)), '.') + f' ${total_cost}'.rjust(len(str(total_cost))))
 
+    print('\n' + 'Thank you for your business!'.center (44))
+    
 # call main
 main()
-
